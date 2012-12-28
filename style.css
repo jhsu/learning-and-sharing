@@ -1,0 +1,37 @@
+body { padding: 0; margin: 0; }
+
+#container {
+  width: 800px;
+  overflow: auto;
+  margin: 0;
+}
+
+#container header,
+#container #content,
+#container footer {
+  padding: 10px;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  #container {
+    margin: 0 auto;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  #container {
+    width: 630px;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  #container {
+    width: 100%;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {  }

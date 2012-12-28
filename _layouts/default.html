@@ -4,13 +4,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <link rel="stylesheet" href="./normalize.css" />
   <link rel="stylesheet" href="./bootstrap.min.css" />
   <link rel="stylesheet" href="./bootstrap-responsive.min.css" />
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./branding.css" />
 </head>
 <body>
   <div id="container">
-    {{ content }}
+    <header>
+      <h1><a href="/" title="">HEADING</a></h1>
+    </header>
+    <div id="content">
+      {{ content }}
+    </div>
+    <footer>
+      &copy;
+    </footer>
   </div>
 </body>
 </html>
