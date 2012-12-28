@@ -13,7 +13,7 @@ layout: default
 
     <ol>
     {% for post in site.posts %}
-    <li class="post"><a href="#{{ post.slug }}" class="post-title">{{ post.title }}</a></li>
+    <li class="post"><a href="#{{ post.permalink }}" class="post-title">{{ post.title }}</a></li>
     {% endfor %}
     </ol>
   </div>
@@ -22,7 +22,7 @@ layout: default
 <div class="row-fluid">
   <div class="span12 posts">
     {% for post in site.posts %}
-      <div class="post" id="{{ post.slug }}">
+      <div class="post" id="{{ post.permalink }}">
         <h2 class="post-title">{{ post.title }}</h2>
         {{ post.content }}
       </div>
