@@ -3,3 +3,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.markdown
+
+authors:
+  - Your Name

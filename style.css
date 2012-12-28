@@ -4,12 +4,12 @@ body { padding: 0; margin: 0; }
   width: 800px;
   overflow: auto;
   margin: 0;
+  padding: 15px;
 }
 
 #container header,
 #container #content,
 #container footer {
-  padding: 10px;
 }
 
 /* Large desktop */

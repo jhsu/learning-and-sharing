@@ -1,8 +1,31 @@
 ---
 layout: default
 ---
-<h1>Hello</h1>
 <div class="row-fluid">
-  <div class="span4">left</div>
-  <div class="span8">right</div>
+  <div class="span12">
+    {% include introduction.html %}
+  </div>
+</div>
+
+<div class="row-fluid">
+  <div class="span12">
+    <h2>Contents</h2>
+
+    <ol>
+    {% for post in site.posts %}
+    <li class="post"><a href="#{{ post.slug }}" class="post-title">{{ post.title }}</a></li>
+    {% endfor %}
+    </ol>
+  </div>
+</div>
+
+<div class="row-fluid">
+  <div class="span12 posts">
+    {% for post in site.posts %}
+      <div class="post" id="{{ post.slug }}">
+        <h2 class="post-title">{{ post.title }}</h2>
+        {{ post.content }}
+      </div>
+    {% endfor %}
+  </div>
 </div>
