@@ -25,6 +25,9 @@ you are working on.
 $ git checkout -b learning-to-be-awesome
 {% endhighlight %}
 
+Set the name by changing project name in `_config.yml`. This will now appear at
+the top of the generated page.
+
 Oh, and don't forget to install dependencies.
 
 {% highlight bash %}
