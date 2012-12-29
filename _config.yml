@@ -1,8 +1,12 @@
+markdown: maruku
 pygments: true
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.markdown
+  - section_template.markdown
 
 authors:
   - Your Name
+project:
+  name: Learning and Sharing

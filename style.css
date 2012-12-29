@@ -35,3 +35,12 @@ body { padding: 0; margin: 0; }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {  }
+
+p {
+  line-height: 1.5;
+}
+
+.footnotes p { display: inline; }
+li:target {
+  background-color: #BFEFFF;
+}

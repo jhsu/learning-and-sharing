@@ -1,0 +1,5 @@
+---
+title: {{TITLE}}
+permalink: {{PERMALINK}}
+---
+

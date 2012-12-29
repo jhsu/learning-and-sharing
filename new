@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+require 'bundler'
+Bundler.require
+
+title = ARGV.join(" ").strip
+exit unless title && title.length > 0
+template = File.read("./section_template.markdown")
+
+permalink = title.downcase.gsub(/\s+/, '-').gsub(/\W+/, '')
+timestamp = Time.now.strftime("%Y-%m-%d")
+filename = timestamp + "-"+ title + ".markdown"
+
+template.gsub!("{{TITLE}}", title)
+template.gsub!("{{PERMALINK}}", permalink)
+
+new_template = "./_posts/#{filename}"
+
+unless File.exists?(new_template)
+  File.open(new_template, "w") {|f| f.write(template) }
+end
+
+Launchy.open(new_template)
