@@ -12,3 +12,15 @@ $ cd learning-and-sharing
 
 Once you have the project checked out, start a new branch for the project
 you are working on.
+
+{% highlight bash %}
+$ git checkout -b learning-to-be-awesome
+{% endhighlight %}
+
+Oh, and don't forget to install dependencies.
+
+{% highlight bash %}
+$ bundle install
+{% endhighlight %}
+
+Now you are all set to start taking some notes!
