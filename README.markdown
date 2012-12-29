@@ -14,7 +14,7 @@ conflict with your content.
 
 ## TODO
 
-- Ensure that merging code doesn't conflict:
-  - example post
-  - example stylesheet
-  - _config.yml
+* Ensure that merging code doesn't conflict:
+  * example post
+  * example stylesheet
+  * _config.yml
