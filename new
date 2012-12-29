@@ -6,9 +6,9 @@ title = ARGV.join(" ").strip
 exit unless title && title.length > 0
 template = File.read("./section_template.markdown")
 
-permalink = title.downcase.gsub(/\s+/, '-').gsub(/\W+/, '')
+permalink = title.downcase.gsub(/[^\w\s]+/, '').gsub(/\s+/, '-')
 timestamp = Time.now.strftime("%Y-%m-%d")
-filename = timestamp + "-"+ title + ".markdown"
+filename = timestamp + "-"+ permalink + ".markdown"
 
 template.gsub!("{{TITLE}}", title)
 template.gsub!("{{PERMALINK}}", permalink)
@@ -19,4 +19,5 @@ unless File.exists?(new_template)
   File.open(new_template, "w") {|f| f.write(template) }
 end
 
-Launchy.open(new_template)
+puts "* created '#{new_template}'"
+# Launchy.open(new_template)
