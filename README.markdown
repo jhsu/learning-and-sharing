@@ -11,3 +11,10 @@ Base template for documenting things as you learn.
 
 Merge in changes from this repository against this repository. It should not
 conflict with your content.
+
+## TODO
+
+- Ensure that merging code doesn't conflict:
+  - example post
+  - example stylesheet
+  - _config.yml
