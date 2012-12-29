@@ -7,6 +7,6 @@ exclude:
   - section_template.markdown
 
 authors:
-  - Your Name
+  - Joseph Hsu
 project:
   name: Learning and Sharing
