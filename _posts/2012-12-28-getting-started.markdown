@@ -3,6 +3,14 @@ title: Getting Started
 permalink: getting-started
 ---
 
+### Requirements
+
+* git
+* Ruby (Rubygems, Bundler)
+* Pygments
+
+### Clone it
+
 First clone the template repository:
 
 {% highlight bash %}
